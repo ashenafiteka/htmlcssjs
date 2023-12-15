@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Cart Quantity </title>
+      
+  </head>
+
+  <body >
+    
+  <p>Cart Quantity</p>
+
+   <button onclick="
+   console.log(`Cart Quantity: ${cartQuantity}`);
+   ">Show Quantity</button>
+
+   <button onclick="
+   cartQuantity = cartQuantity + 1; 
+   console.log(`Cart Quantity: ${cartQuantity}`);
+   ">Add to Cart</button>
+
+<!-- cartQuantity = cartQuantity + 1; 
+  is equivalent with 
+  cartQuantity+= 1; 
+  cartQuantuty++ -->
+
+   <button onclick="
+   cartQuantity = cartQuantity + 2;
+   console.log(`Cart Quantity: ${cartQuantity}`);
+   ">+2</button>
+
+<!-- 
+  cartQuantity = cartQuantity + 2; 
+  is equivalent with 
+  cartQuantity+= 2;  
+==> camelCase = cartQuantity
+==> PascalCase = CartQuantity
+==> kebab-case = cart-quantity //this doesnt work on JS b/c - is minus & it is applicable in HTML and CSS
+==> Snake_case = cart_quantity // dosent work on js
+-->
+
+   <button onclick="
+   cartQuantity = cartQuantity + 3;
+   console.log(`Cart Quantity: ${cartQuantity}`);
+   ">+3</button>
+
+   <button onclick="
+   cartQuantity =  0;
+   console.log('cart was Reset');
+   console.log(`Cart Quantity: ${cartQuantity}`);
+   ">Reset Cart</button>
+
+    <script>
+      let cartQuantity  = 0;
+    
+    </script>
+
+  </body> 
+</html>

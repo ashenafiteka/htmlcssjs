@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Rock Paper Scissors </title>
+      
+  </head>
+
+  <body >
+
+    <p> Rock Paper Scissors </p>
+    <button onclick="
+      
+      const randomNumber = Math.random();
+      let computerMove = '';
+
+      if (randomNumber >= 0 && randomNumber <= 1/3) {
+        computerMove = 'Rock';
+      } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+        computerMove ='Paper';
+    } else if (randomNumber >= 2/3 && randomNumber < 1) {
+      computerMove ='Scissors';
+    }
+    
+let result = '';
+
+if (computerMove === 'Rock') {
+  result = 'Tie.';
+} else if (computerMove === 'Paper') {
+  result = 'You lose.';
+} else if (computerMove === 'Scissors'){
+  result = 'You Win.';
+}
+alert(`you picked Rock. computer picked ${computerMove}. ${result}`);
+
+   ">Rock</button>
+    
+
+
+   <button onclick="
+    
+    const randomNumber = Math.random();
+      let computerMove = '';
+
+      if (randomNumber >= 0 && randomNumber <= 1/3) {
+        computerMove = 'Rock';
+      } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+        computerMove ='Paper';
+    } else if (randomNumber >= 2/3 && randomNumber < 1) {
+      computerMove ='Scissors';
+    }
+    
+let result = '';
+
+if (computerMove === 'Rock') {
+  result = 'You Win.';
+} else if (computerMove === 'Paper') {
+  result = 'Tie.';
+} else if (computerMove === 'Scissors'){
+  result = 'You lose.';
+}
+alert(`you picked Paper. computer picked ${computerMove}. ${result}`);
+
+   
+   ">Paper</button>
+
+
+    <button onclick="
+    
+    const randomNumber = Math.random();
+      let computerMove = '';
+
+      if (randomNumber >= 0 && randomNumber <= 1/3) {
+        computerMove = 'Rock';
+      } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+        computerMove ='Paper';
+    } else if (randomNumber >= 2/3 && randomNumber < 1) {
+      computerMove ='Scissors';
+    }
+    
+let result = '';
+
+if (computerMove === 'Rock') {
+  result = 'You lose.';
+} else if (computerMove === 'Paper') {
+  result = 'You win.';
+} else if (computerMove === 'Scissors'){
+  result = 'Tie.';
+}
+alert(`you picked Scissors. computer picked ${computerMove}. ${result}`);
+    
+    ">Scissors</button> 
+
+  </br>
+</br>
+</br>
+
+    <p>Click here to see the final version of the project.</p>
+ 
+    <script>
+      /*
+      // steps
+      // when we click a button:
+      // 1. computer randomly select a move
+      // 2. computer the moves to get the result
+      // 3. Display the result in a popup     
+      // logical operator || or operator, !true not true !false not false
+      // var doesnt really follow the rules of scope.
+      //strategy for JS
+      // 1. figurout what the possible steps we need to solve the challenge
+      // 2. converst these steps into code
+      // Truthy and falsy values
+      // falsy values includes - 0 '' NaN undefined null
+      // other values are truthy value
+      // shortcts for if-statements
+      // undefind can not work with const variable
+      // 1. Ternary operator ?:
+      // 2. Guard Operator &&
+      // 3. Default Operator || 
+      // example _  true ? 'truthy' : 'falsy'  ?=if :=else
+      ==> if (truthy) {
+        condition
+      } else {
+        
+      }
+      */ 
+    </script>
+
+  </body> 
+</html>

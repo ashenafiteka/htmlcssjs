@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+</head>
+<body>
+  
+</body>
+<script>
+const result =  true ? 'ashenafi' : 'falsy';
+/* This shorten expression is equivalent with  
+let result;
+if(condition) {
+  result = 'truthy';
+} else {
+  result = 'falsey';
+}
+
+      // undefind can not work with const variable
+      // 1. Ternary operator ?:
+      // 2. Guard Operator &&
+      // 3. Default Operator || 
+      // example _  true ? 'truthy' : 'falsy'  ?=if :=else
+
+*/
+console.log(result);
+
+false && console.log('hello'); // guard operator stops the false opration before right execuation
+const message = 6 && 'hello'; // this expression is equals to
+/* 
+let message;
+if(condition) {
+  message = 'hello';
+}
+*/
+console.log(message);  
+
+const currency = undefined || 'USD'; // the execution didnt stope on undefined continued until defined object is obtained
+/* 
+let currency;
+if ()condition) {
+  currency = 'USD'; 
+}
+*/
+currency.log(currency);
+
+</script>
+</html>
